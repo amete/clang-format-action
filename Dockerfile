@@ -2,8 +2,8 @@
 FROM ubuntu:latest
 
 # Setup the minimal requirements
-RUN DEBIAN_FRONTEND="noninteractive" apt-get -y update && \
-    apt-get -y install git \
+RUN apt-get -y update && \
+    DEBIAN_FRONTEND="noninteractive" apt-get -y install git \
     cmake extra-cmake-modules \
     clang clang-format clang-tidy;
 
