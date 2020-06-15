@@ -37,5 +37,6 @@ echo ">> Committing the changes"
 git commit -a -m "Apply clang-format" || true
 
 # Push to the branch
+BRANCH=${GITHUB_REF#*refs/heads/}
 echo ">> Pushing to $BRANCH"
 git push -u origin $BRANCH
