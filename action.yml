@@ -1,0 +1,7 @@
+# action.yml
+name: 'clang-format'
+author: 'Alaettin Serhan Mete (amete)'
+description: 'GitHub Action to run clang-format'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
