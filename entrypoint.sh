@@ -36,7 +36,11 @@ git config --global user.name "clang-format"
 echo ">> Committing the changes"
 git commit -a -m "Apply clang-format" || true
 
+# Print some information
+echo "$GITHUB_EVENT_PATH"
+echo "$GITHUB_REF"
+
 # Push to the branch
-BRANCH=${GITHUB_REF#*refs/heads/}
+BRANCH=${GITHUB_REF#*refs/pull/}
 echo ">> Pushing to $BRANCH"
 git push -u origin $BRANCH
