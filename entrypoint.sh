@@ -3,15 +3,9 @@ set -e
 
 # Setup
 echo ">> Setting things up"
-if [ -z "$CXX" ]; then
-    CXX=$(type -p clang++)
-fi
-if [ -z "$CC" ]; then
-	CC=$(type -p clang)
-fi
-if [ -z "$CMAKE" ]; then
-	CMAKE=$(type -p cmake)
-fi
+CXX=$(type -p c++)
+CC=$(type -p cc)
+CMAKE=$(type -p cmake)
 
 # Configure cmake from /tmp
 echo ">> Running the cmake configuration"
