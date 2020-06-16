@@ -3,9 +3,9 @@ set -e
 
 # Setup
 echo ">> Setting things up"
-CXX=$(type -p c++)
-CC=$(type -p cc)
-CMAKE=$(type -p cmake)
+CXX=`which clang++`
+CC=`which clang`
+CMAKE=`which cmake`
 
 # Configure cmake from /tmp
 echo ">> Running the cmake configuration"
