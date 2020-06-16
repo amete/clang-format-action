@@ -2,11 +2,12 @@
 set -e
 
 # Setup
+echo ">> Setting things up"
 if [ -z "$CXX" ]; then
-    CXX=$(type -p g++)
+    CXX=$(type -p clang++)
 fi
 if [ -z "$CC" ]; then
-	CC=$(type -p gcc)
+	CC=$(type -p clang)
 fi
 if [ -z "$CMAKE" ]; then
 	CMAKE=$(type -p cmake)
