@@ -32,7 +32,7 @@ if ! git diff --quiet; then
   MSG="Changes are applied, committed, and pushed!"
 else
   MSG="There are no changes, all good!"
-if
+fi
 
 # Push the message
 echo "::set-output name=message::$MSG"
