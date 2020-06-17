@@ -1,6 +1,6 @@
 # clang-format GitHub Action
 
-This repository holds a basic GitHub Action for running clang-format.
+This repository holds a basic GitHub Action for running `clang-format`.
 
 It primarily targets the [HSF/prmon](https://github.com/HSF/prmon) project.
 However, it's generic enough to be used in any project and
