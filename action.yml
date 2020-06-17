@@ -2,6 +2,18 @@
 name: 'clang-format'
 author: 'Alaettin Serhan Mete (amete)'
 description: 'GitHub Action to run clang-format'
+# Inputs
+inputs:
+  style:
+    description: 'Format style'
+    required: true
+    default: 'Google'
+# Outputs
+outputs:
+  message:
+    description: 'Return message'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.style }}
