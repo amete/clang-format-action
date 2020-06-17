@@ -1,5 +1,10 @@
 # clang-format GitHub Action
 
+[![License][license-img]][license-url]
+
+[license-img]: https://img.shields.io/github/license/amete/clang-format-action.svg
+[license-url]: https://github.com/amete/clang-format-action/blob/master/LICENSE
+
 This repository holds a basic GitHub Action for running `clang-format`.
 
 It primarily targets the [HSF/prmon](https://github.com/HSF/prmon) project.
